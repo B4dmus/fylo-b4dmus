@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <style>
+    .navbar {
+      height: 49px;
+      width: 1280px;
+      background-color: white;
+      margin-bottom: 50px;
+      margin-top: 30px;
+      margin-left: 80px;
+    }
+
+    .ulogo {
+      height: 49px;
+      width: 166px;
+    }
+
+    .navp {
+      text-decoration: none;
+      padding-top: 13px;
+      font-size: 16px;
+      width: 271px;
+      height: 19px;
+      text-align: center;
+      font-size: lighter;
+      float: right;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .hero {
+      width: 1280px;
+      height: 474px;
+      margin-left: 80px;
+    }
+
+    .headhero {
+      width: 627px;
+      height: 120px;
+      font-size: 40px;
+      margin-top: 90px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      color: #07043B;
+      font-style: normal;
+    }
+
+    .headee {
+      margin-top: 25px;
+    }
+
+    .herop {
+      margin-top: 30px;
+      width: 585px;
+      height: 72px;
+    }
+
+    .heepee {
+      margin-top: -2px;
+      font-size: 17px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      padding-right: 20px;
+    }
+
+    .hero,
+    .headhero {
+      padding-top: 10px;
+    }
+
+    .formbar {
+      margin-top: 25px;
+      width: 536px;
+      height: 45px;
+    }
+
+    .formcontrol {
+      width: 320px;
+      height: 45px;
+      border-radius: 5px;
+      border-color: black;
+    }
+
+    ::placeholder {
+      padding-left: 20px;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .formcontrol:focus {
+          border-color: black;
+          outline: none;
+          font-family: "Raleway", sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+    }
+
+    .btn {
+      border: 0px;
+      border-radius: 5px;
+      background-color: #007FFF;
+      color: white;
+      width: 200px;
+      height: 50px;
+      font-size: 16px;
+      float: right;
+      cursor: pointer;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .fea {
+      text-decoration: none;
+      color: #07043B;
+    }
+
+    .tea {
+      text-decoration: none;
+      padding-left: 30px;
+      color: #07043B;
+    }
+
+    .sig {
+      text-decoration: none;
+      padding-left: 30px;
+      color: #07043B;
+    }
+
+    .uphold {
+      width: 640px;
+      height: 474px;
+      float: right;
+    }
+
+    .formbar>label {
+      margin-left: 4px;
+    }
+
+    .valleysec {
+      height: 838px;
+      width: 1440px;
+      margin-top: 250px;
+      margin-left: -80px;
+    }
+
+    .valley {
+      width: 1440px;
+      height: 837.87px;
+      background: url("images/bg-curve-desktop.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .valleyhead {
+      height: 47px;
+      width: 648px;
+      margin-top: -700px;
+      margin-left: 80px;
+    }
+
+    .valleytxt {
+      margin-top: -5px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 39px;
+      color: #07043B;
+    }
+
+    .valleyteam {
+      height: 409px;
+      width: 542px;
+    }
+
+    .team {
+      height: 409px;
+      width: 542px;
+      margin-left: 820px;
+      margin-right: 80px;
+      margin-top: -20px;
+    }
+
+    .p1 {
+      height: 48px;
+      width: 529px;
+      margin-left: 80px;
+      margin-left: 80px;
+      font-size: 16px;
+      margin-top: -380px;
+      color: #07043B;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .p2 {
+      height: 48px;
+      width: 529px;
+      margin-left: 80px;
+      margin-left: 80px;
+      color: #07043B;
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .seehyp {
+      font-size: 16px;
+      margin-left: 80px;
+      display: inline-block;
+      position: absolute;
+      color: green;
+      text-underline-offset: 5px;
+      border-bottom: 0px solid;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      line-height: 1.8;
+      font-style: normal;
+    }
+
+    .seehypm {
+      width: 166px;
+    }
+
+    .arrow {
+      margin-left: 230px;
+      margin-top: 8px;
+    }
+
+    .valleysq {
+      height: 215px;
+      width: 356px;
+      background-color: white;
+      position: absolute;
+      margin-left: 80px;
+      margin-top: 50px;
+      border-radius: 5px;
+    }
+
+    .qtn {
+      margin-top: 30px;
+      margin-left: 33.5px;
+    }
+
+    .valleysqp {
+      width: 289px;
+      height: 92px;
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+      margin-left: 33.5px;
+      margin-top: 10px;
+      max-width: 270px;
+    }
+
+    .avatard {
+      width: 137px;
+      height: 32px;
+      margin-left: 33.5px;
+      margin-top: -10px;
+    }
+
+    .avatar {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+    }
+
+    .authname {
+      height: 15px;
+      width: 71px;
+      font-size: 11px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      margin-top: -44px;
+      margin-left: 40px;
+    }
+
+    .title {
+      width: 91px;
+      height: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 8px;
+      margin-top: -7px;
+      margin-left: 40px;
+    }
+
+    .downbar {
+      width: 1440px;
+      height: 369.71px;
+      background-color: #575988;
+      margin-top: 120px;
+      margin-left: -121.5px;
+      padding-top: 116.5px;
+    }
+
+    .downinbar {
+      width: 533px;
+      height: 137px;
+      margin-left: 80px;
+    }
+
+    .downinbar>h4 {
+      font-size: 32px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      color: white;
+      margin-top: -5px;
+    }
+
+    .downinbar>p {
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      margin-top: -5px;
+      padding-right: 25px;
+      color: #ffff;
+    }
+
+    .dspacebar {
+      width: 480px;
+      height: 112px;
+      margin-left: 850px;
+      margin-top: -123px;
+
+    }
+
+    .downform {
+      height: 48px;
+      width: 475px;
+      border-radius: 3.13px;
+      border-top: #575988;
+      border-left: #575988;
+    }
+
+    .dspacebar> ::placeholder {
+      font-size: 12px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .downform:focus {
+          border-color: black;
+          outline: none;
+          font-family: "Raleway", sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+        }
+
+    .dbtn {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      background-color: #007FFF;
+      color: white;
+      width: 200px;
+      height: 48px;
+      cursor: pointer;
+      border-color: #007FFF;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .lastbar {
+      width: 1440px;
+      height: 391px;
+      background-color: #07043B;
+      margin-top: 200px;
+      padding-top: 100px;
+    }
+
+    .dlogosec {
+      width: 222px;
+      height: 140px;
+      margin-left: 80px;
+    }
+
+    .dlogo {
+      filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(266deg) brightness(180%) contrast(130%);
+    }
+
+    .pnd {
+      height: 25px;
+      width: 222px;
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+      color: white;
+      margin-top: 15px;
+      display: flex;
+
+    }
+
+    .pn {
+      width: 24x;
+      height: 24px;
+    }
+
+    .uspn {
+      margin-left: 15px;
+    }
+
+
+    .emd {
+      width: 182px;
+      height: 25px;
+      color: white;
+      display: flex;
+    }
+
+    .em {
+      width: 24px;
+      height: 24px;
+    }
+
+    .exmail {
+      width: 142px;
+      height: 24px;
+      margin-left: 15px;
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .emd,
+    .pnd {
+      margin-top: 15px;
+    }
+
+    .horid {
+      height: 136px;
+      width: 69px;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      margin-top: -85px;
+      margin-left: 410px;
+
+    }
+
+    .a:hover {
+      color: #007FFF;
+    }
+
+    .b:hover {
+      color: #007FFF;
+    }
+
+    .c:hover {
+      color: #007FFF;
+    }
+
+    .d:hover {
+      color: #007FFF;
+    }
+
+    .horid2 {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      margin-top: -150px;
+      color: white;
+      margin-left: 730px;
+      width: 81px;
+      height: 98px;
+    }
+
+    .e:hover {
+      color: #007FFF;
+    }
+
+    .f:hover {
+      color: #007FFF;
+    }
+
+    .g:hover {
+      color: #007FFF;
+    }
+
+    .socials {
+      width: 120px;
+      height: 31px;
+      margin-top: -95px;
+      margin-left: 1000px;
+    }
+
+    .fa {
+      font-size: 16px;
+      color: white;
+      width: 32px;
+      height: 31px;
+      display: inline-block;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .fa:hover {
+      color: #007FFF;
+      border-color: #007FFF;
+    }
+
+    .fa-facebook {
+      border: 1px solid white;
+      box-sizing: border-box;
+      padding-top: 7.5px;
+    }
+
+    .fa-twitter {
+      border: 1px solid white;
+      box-sizing: border-box;
+      padding-top: 7.5px;
+    }
+
+    .fa-instagram {
+      border: 1px solid white;
+      box-sizing: border-box;
+      padding-top: 7.5px;
+    }
+
+    @media (max-width: 375px) {
+        .container {
+            height: 2741px;
+            width: 375px;
+            margin: auto;
+            align-items: center;
+        }
+
+        .ulogo {
+          width: 80px;
+          height: 24px;
+          margin-left: -10px;
+        }
+
+        .navbar {
+            height: 24px;
+            width: 327px;
+            margin-top: 20px;
+            margin-left: 24px;
+        }
+
+        .navp {
+            font-size: 12px;
+            width: 271px;
+            height: 19px;
+            margin-top: -38px;
+            padding-left: 315px;
+            text-align: center;
+            font-family: "Raleway", sans-serif;
+            font-weight: 400;
+        }
+
+        .fea {
+            text-decoration: none;
+            color: #07043B;
+            margin-right: -10px;
+            margin-left: 95px;
+        }
+
+        .tea {
+            text-decoration: none;
+            margin-left: 5px;
+            color: #07043B;
+            margin-right: -45px;
+           
+        }
+        
+
+        .sig {
+            text-decoration: none;
+            margin-left: 40px;
+            color: #07043B;
+        }
+
+        .uphold {
+          width: 304px;
+          height: 225px;
+          float: left;
+          margin-left: -50px;
+        }
+
+        .headhero {
+            width: 320px;
+            height: 108px;
+            margin-top: 250px;
+            text-align: center;
+            margin-left: -50px;
+        }
+
+        .headhero>h4 {
+            margin-top: 5px;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-size: 24px;
+            font-style: normal;
+        }
+
+        .herop {
+            width: 296px;
+            height: 84px;
+            text-align: center;
+            margin-left: -43px;
+            margin-top: 25px;
+            /* border: 1px solid; */
+        }
+
+
+        .heepee {
+          width: 296px;
+            height: 84px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #07043B;
+            text-align: center;
+        }
+
+        .formcontrol {
+            width: 297px;
+            height: 40px;
+            border-color: black;
+            border-radius: 3.13px;
+            margin-top: 10px;
+            position: absolute;
+            margin-left: -48px;
+        }
+
+       .btn {
+        width: 304px;
+        height: 40px;
+        margin-left: -47px;
+        position: absolute;
+        margin-top: 75px;
+
+        }
+
+        ::placeholder {
+            padding-left: 20px;
+            font-size: 12px;
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            color: #07043B;
+        }
+
+        .valleysec {
+            width: 375px;
+            height: 961px;
+            position: absolute;
+            margin-top: 200px;
+        }
+
+        .valley {
+            width: 375px;
+            height: 961px;
+            background: url(../images/bg-curve-mobile.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            margin-left: -3px;
+        }
+
+        .team {
+            width: 320px;
+            height: 241px;
+            position: absolute;
+            float: left;
+            margin-top: 90px;
+            margin-left: 40px;
+        }
+
+        .valleyhead {
+            height: 24px;
+            width: 260px;
+            position: absolute;
+            margin-top: 380px;
+            margin-left: 55px;
+        }
+
+        .valleytxt {
+            font-size: 16px;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            margin-top: 30px;
+            color: #07043B;
+        }
+
+        .valleyp1 {
+            height: 63px;
+            width: 320px;
+            text-align: center;
+            color: #615F7E;
+            position: absolute;
+            margin-top: 30px;
+        }
+
+        .p1 {
+            height: 63px;
+            width: 320px;
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            margin-top: 3px;
+            margin-left: 30px;
+        }
+
+        .p2 {
+            height: 63px;
+            width: 320px;
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            margin-left: 30px;
+            /* margin-top: 3px; */
+        }
+
+        .seehyp {
+          margin-top: 210px;
+          margin-left: 133px;
+          font-size: 12px;
+        }
+
+        .seehypm {
+          width: 130px;
+        }
+
+        .arrow {
+            margin-left: 247px;
+            margin-top: 213px;
+            position: absolute;
+        }
+
+        .valleysq {
+            width: 280px;
+            height: 170px;
+            margin-top: 300px;
+            margin-left: 47px;
+            color: #07043B;
+            border: 1px solid white;
+            background-color: #FFFFFF;
+        }
+
+        .qtn {
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        .valleysqp {
+            font-size: 10.7px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            height: 73px;
+            width: 241.3px;
+            margin-left: 25px;
+        }
+
+        .avatar {
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+        }
+
+        .avatard {
+            height: 27px;
+            width: 105px;
+            margin-top: -7px;
+            margin-left: 25px;
+        }
+
+        .authname {
+            height: 12px;
+            width: 58px;
+            font-size: 9px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            /* border: 1px solid; */
+            margin-top: -38px;
+            margin-left: 30px;
+        }
+
+        .title {
+            height: 12px;
+            width: 73px;
+            font-size: 6px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300px;
+            margin-left: 30px;
+            margin-top: -3px;
+        }
+
+        .downbar {
+            height: 345px;
+            width: 375px;
+            background-color: #575988;
+            margin-left: -76px;
+            margin-top: 102px;
+            margin-bottom: -30px;
+            align-items: center;
+        }
+
+        .downinbar>h4 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            width: 195px;
+            height: 24px;
+            color: white;
+            font-size: 18px;
+            margin-top: -60px;
+            margin-left: 10px;
+            position: absolute;
+            text-align: center;
+        }
+
+        .downinbar>p {
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400px;
+            width: 280px;
+            height: 84px;
+            color: white;
+            margin-left: -30px;
+            text-align: center;
+            position: absolute;
+            margin-top: -10px;
+        }
+
+        .downform {
+            height: 32px;
+            width: 233px;
+            margin-left: -780px;
+            margin-top: 100px;
+        }
+
+        .downform::placeholder {
+            font-size: 10px;
+            padding: 10px;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .dbtn {
+            height: 32px;
+            width: 240px;
+            font-size: 10px;
+            background-color: #007FFF;
+            color: white;
+            border: #007FFF;
+            position: absolute;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            margin-left: -240px;
+            margin-top: 150px;
+            cursor: pointer;
+        }
+
+        .lastbar{
+            width: 375px;
+            height: 590px;
+            background-color: #07043B;
+        }
+
+        .dlogo {
+            height: 30px;
+            width: 105px;
+            margin-top: -90px;
+            margin-left: -25px;
+        }
+
+        .dlogo {
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(266deg) brightness(180%) contrast(130%);
+        }
+
+        .pnd {
+            height: 24px;
+            width: 222px;
+            margin-left: -25px;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .pn {
+            height: 24px;
+            width: 24px;
+        }
+
+        .uspn {
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 100px;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .emd {
+            height: 24px;
+            width: 182px;
+            display: flex;
+            margin-left: -25px;
+            margin-top: 25px;
+        }
+
+        .em {
+            height: 24px;
+            width: 24px;
+        }
+
+        .exmail {
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 100px;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .horid {
+            height: 136px;
+            width: 69px;
+            margin-left: -25px;
+            color: white;
+            margin-top: 35px;
+            font-size: 16px;
+        }
+
+        .a:hover {
+            color: #007FFF;
+        }
+
+        .b:hover {
+            color: #007FFF;
+        }
+
+        .c:hover {
+            color: #007FFF;
+        }
+
+        .d:hover {
+            color: #007FFF;
+        }
+
+        .e:hover {
+            color: #007FFF;
+        }
+
+        .f:hover {
+            color: #007FFF;
+        }
+
+        .g:hover {
+            color: #007FFF;
+        }
+
+        .horid2 {
+            width: 81px;
+            height: 98px;
+            margin-left: -25px;
+            margin-top: 50px;
+            color: white;
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .socials {
+            width: 104px;
+            height: 27px;
+            margin-left: 62px;
+            margin-top: 50px;
+        }
+
+        .fa {
+            font-size: 12px;
+            color: white;
+            width: 28px;
+            height: 27px;
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+
+        .fa:hover {
+            color: #007FFF;
+            border-color: #007FFF;
+        }
+
+        .fa-facebook {
+            border: 1px solid white;
+            box-sizing: border-box;
+            padding-top: 7.5px;
+        }
+
+        .fa-twitter {
+            border: 1px solid white;
+            box-sizing: border-box;
+            padding-top: 7.5px;
+        }
+
+        .fa-instagram {
+            border: 1px solid white;
+            box-sizing: border-box;
+            padding-top: 6px;
+        }
+    
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+   <div class="navbar">
+    <img class="ulogo" src="./images/logo.svg">
+    <div class="navp">
+      <a class="fea" href="features">Features</a>
+      <a class="tea" href="Team">Team</a>
+      <a class="sig" href="signin">Sign In</a>
+    </div>
+  </div>
+  <div class="hero">
+    <img class="uphold" src="./images/illustration-1.svg">
+    <div class="headhero">
+      <h4 class="headee">All your files in one secure location, accessible anywhere.</h2>
+    </div>
+    <div class="herop">
+      <p class="heepee">Fylo stores your most important files in one secure location.
+        Access them wherever you need, share and collaborate with friends,
+        family, and co-workers.</p>
+    </div>
+    <div class="formbar">
+      <input class="formcontrol" id="floatingInput" placeholder="Enter your email...">
+      <a href="#"><button class="btn">Get Started</button></a>
+    </div>
+    <div class="valleysec">
+      <div class="valleyimg">
+        <img class="valley" src="./images/bg-curve-desktop.svg">
+      </div>
+      <div class="valleyhead">
+        <h4 class="valleytxt">Stay productive, wherever you are</h4>
+      </div>
+      <div class="valleyteam">
+        <img class="team" src="./images/illustration-2.svg">
+      </div>
+      <div class="valleyp1">
+        <p class="p1">Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
+        <p class="p2">Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!</p>
+      </div>
+      <div class="lithyp">
+        <a class="seehyp" href="#seehowitworks"><span class="seehypm"
+            style="width: px; display: inline-block; border-bottom: 1px solid;">See how Fylo works</span></a>
+        <img class="arrow" src="./images/icon-arrow.svg">
+      </div>
+      <div class="valleysq">
+        <img class="qtn" src="./images/icon-quotes.svg">
+        <p class="valleysqp">Fylo has improved our team productivity by an order of magnitude. Since
+          making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="avatard">
+          <img class="avatar" src="./images/avatar-testimonial.jpg">
+          <div class="authname">
+            <p>Kyle Burton</p>
+          </div>
+          <div class="title">
+            <p>Founder & CEO, Huddle</p>
+          </div>
+          <div class="downbar">
+            <div class="downinbar">
+              <h4>Get early access today</h4>
+              <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+                questions, our support team would be happy to help you.</p>
+            </div>
+            <div class="dspacebar">
+              <input class="downform" name="emailaddress" placeholder="email@example.com">
+              <a href="#"><button class="dbtn">Get Started For Free</button></a>
+            </div>
+            <div class="lastbar">
+              <div class="dlogosec">
+                <img class="dlogo" src="./images/logo.svg" />
+                <div class="pnd">
+                  <img class="pn" src="./images/icon-phone.svg">
+                  <span class="uspn">Phone: +1-543-123-4567</span>
+                </div>
+                <div class="emd">
+                  <img class="em" src="./images/icon-email.svg">
+                  <span class="exmail">example@fylo.com</span>
+                </div>
+                <div class="horid">
+                  <a style="text-decoration: none; color: white;" href="#">
+                    <p class="a">About Us</p>
+                  </a>
+                  <a style="text-decoration: none; color: white;" href="#">
+                    <p class="b">Jobs</p>
+                  </a>
+                  <a style="text-decoration: none; color: white;" href="#">
+                    <p class="c">Press</p>
+                  </a>
+                  <a style="text-decoration: none; color: white;" href="#">
+                    <p class="d">Blog</p>
+                  </a>
+                </div>
+                <div class="horid2">
+                  <p class="e">Contact Us</p>
+                  <p class="f">Terms</p>
+                  <p class="g">Privacy</p>
+                </div>
+                <div class="socials">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
